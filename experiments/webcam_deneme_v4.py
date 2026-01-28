@@ -3,7 +3,7 @@ import cv2
 
 model = YOLO('../models/best_v4.pt')
 path = '../videos/webcam.mp4'
-cap = cv2.VideoCapture('../videos/kare_bant_diger_nesne.mp4')
+cap = cv2.VideoCapture(path)
 
 while True:
     success, frame = cap.read()
